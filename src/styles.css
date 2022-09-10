@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro&display=swap');
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+form > div {
+    position: relative;
+}
+.App {
+    display: grid;
+    grid-template-rows: 8rem 1fr 4rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.Header {
+    background-color: #e9e9e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    
+}
+.Content {
+    background-color: #fafaf9;
+}
+.Footer {
+    background-color: #1c1917;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.25rem;
+}
+form {
+    width: 68vh;
+    height: 88vh;
+    margin: 2rem auto 2rem auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+input, textarea {
+    display: block;
+    margin: auto;
+}
+.DeleteBtn {
+    background-color: rgb(214, 127, 127);
+}
+.EditBtn {
+    background-color: rgb(214, 214, 214);
+}
+.SubmitBtn {
+    background-color: rgb(111, 231, 111);
+    border: 2px solid rgb(81, 185, 81);
+}
+.SubmitBtn, .EditBtn, .addBtn, .DeleteBtn {
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    width: 2em;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    user-select:none;
+    margin: auto;
+    margin-top: 2rem;
+}
+.BtnCouple {
+    display: flex;
+    position: absolute;
+    top: -1rem;
+    left: 80%;
+    height: 1.5rem;
+}
+.SubmitBtn:Hover {
+    background-color: rgb(72, 193, 76);
+}
+.EditBtn:Hover {
+    background-color: rgb(154, 154, 154);
+}
+.DeleteBtn:Hover {
+    background-color: rgb(201, 48, 48);
+}
+.SubmitBtn:Hover, .EditBtn:Hover, .DeleteBtn {
+    
+    cursor: pointer;
+    user-select:none;
+}
+.addBtn:Hover {
+    transform: scale(1.1);
+}
+h1 {
+    font-size: 2.5rem;
+    margin: 3.5rem 3rem 1.5rem 3rem;
+    font-family: 'Lato', sans-serif;
+}
+h2 {
+    margin: 2.5rem 3rem 1rem 3rem;
+    border-bottom: 2px solid rgb(226, 226, 226);
+    padding-bottom: .5rem;
+    font-family: 'Lato', sans-serif;
+}
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1rem;
+}
+h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3rem;
+}
+p {
+    margin-top: 1rem;
+}
+em {
+    font-weight: bold;
+    font-style: normal;
+}
+.SectionGrid {
+     display: grid;
+     grid-template-columns: 1fr 4fr; 
+     align-items: end;
+}
+.SectionGrid p:nth-child(3) {
+    grid-column: 2;
+    margin-left: 1rem;
+}
+input, textarea {
+    width: 20%;
+    height: 2rem;
+    margin-top: 1rem;
+}
+.Footer img {
+    margin-left: 1rem;
+}
+.GeneralInfo p{
+    margin-left: 3rem;
+}
